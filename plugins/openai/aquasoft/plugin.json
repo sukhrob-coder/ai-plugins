@@ -1,9 +1,9 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "author": {
-    "name": "Aquasoft"
+    "name": "AquaSoft"
   },
-  "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected Aquasoft organization.",
+  "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected AquaSoft organization.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -18,10 +18,10 @@
           "Explain the selected customer's payments and manual debt charges.",
           "Show gross delivered sales this month and current customer debtors."
         ],
-        "developerName": "Aquasoft",
-        "displayName": "Aquasoft",
+        "developerName": "AquaSoft",
+        "displayName": "AquaSoft",
         "logo": "./assets/logo.svg",
-        "longDescription": "Find customers, count them by segment, inactivity and debt in your connected Aquasoft organization, read saved locations, orders, payments and manual debt charges, and inspect gross delivered sales and current debtors. Existing account permissions still apply. Sales exclude rental lines and are not adjusted for returns or credit notes. This version cannot change records, send SMS or produce driver statistics.",
+        "longDescription": "Find customers, count them by segment, inactivity and debt in your connected AquaSoft organization, read saved locations, orders, payments and manual debt charges, and inspect gross delivered sales and current debtors. Existing account permissions still apply. Sales exclude rental lines and are not adjusted for returns or credit notes. This version cannot change records, send SMS or produce driver statistics.",
         "shortDescription": "Read CRM customers and sales"
       },
       "publication": {
@@ -89,5 +89,5 @@
     "aquasoft"
   ],
   "name": "aquasoft",
-  "version": "0.2.0"
+  "version": "0.2.1"
 }

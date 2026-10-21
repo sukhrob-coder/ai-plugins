@@ -1,13 +1,14 @@
 {
   "author": {
-    "name": "Aquasoft"
+    "name": "AquaSoft"
   },
-  "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected Aquasoft organization.",
+  "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected AquaSoft organization.",
+  "displayName": "AquaSoft",
   "keywords": [
     "crm",
     "customers",
     "aquasoft"
   ],
   "name": "aquasoft",
-  "version": "0.2.0"
+  "version": "0.2.1"
 }

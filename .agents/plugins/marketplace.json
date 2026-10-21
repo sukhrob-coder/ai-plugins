@@ -1,6 +1,6 @@
 {
   "name": "aquasoft",
-  "interface": {"displayName": "Aquasoft"},
+  "interface": {"displayName": "AquaSoft"},
   "plugins": [
     {
       "name": "aquasoft",

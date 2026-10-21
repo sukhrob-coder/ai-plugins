@@ -1,6 +1,6 @@
-# Aquasoft plugin marketplace
+# AquaSoft plugin marketplace
 
-Bu repo Aquasoft CRM plugini uchun Claude Code va Codex (ChatGPT) marketplace’i.
+Bu repo AquaSoft CRM plugini uchun Claude Code va Codex (ChatGPT) marketplace’i.
 Plugin ulangan tashkilotdagi mijozlar, manzillar, buyurtmalar, to‘lovlar, yalpi
 sotuv va joriy qarzdorlarni faqat o‘qiydi. Fayllar backend reposidagi
 `plugins/aquasoft/scripts/build.py` orqali generatsiya qilinadi; bu yerda qo‘lda
@@ -16,7 +16,7 @@ claude plugin install aquasoft@aquasoft
 ```
 
 Claude Code ichida: `/plugin marketplace add sukhrob-coder/ai-plugins`, so‘ng
-`/plugin install aquasoft@aquasoft`. `/mcp` menyusida Aquasoft’ni autentifikatsiya qiling.
+`/plugin install aquasoft@aquasoft`. `/mcp` menyusida AquaSoft’ni autentifikatsiya qiling.
 Yangilash: `claude plugin marketplace update aquasoft`.
 
 Codex / ChatGPT desktop:
@@ -26,10 +26,10 @@ codex plugin marketplace add sukhrob-coder/ai-plugins
 codex plugin add aquasoft@aquasoft
 ```
 
-O‘rnatishda Aquasoft OAuth oynasi ochiladi. Yangilash:
+O‘rnatishda AquaSoft OAuth oynasi ochiladi. Yangilash:
 `codex plugin marketplace upgrade aquasoft`.
 
-Har bir foydalanuvchi o‘z Aquasoft hisobi bilan kiradi. Parol yoki tokenni
+Har bir foydalanuvchi o‘z AquaSoft hisobi bilan kiradi. Parol yoki tokenni
 suhbatga yozmang; paketda umumiy kalit yo‘q.
 
 ```text
