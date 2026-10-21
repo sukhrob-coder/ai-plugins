@@ -22,7 +22,11 @@
         "displayName": "AquaSoft",
         "logo": "./assets/logo.svg",
         "longDescription": "Find customers, count them by segment, inactivity and debt in your connected AquaSoft organization, read saved locations, orders, payments and manual debt charges, and inspect gross delivered sales and current debtors. Existing account permissions still apply. Sales exclude rental lines and are not adjusted for returns or credit notes. This version cannot change records, send SMS or produce driver statistics.",
-        "shortDescription": "Read CRM customers and sales"
+        "privacyPolicyURL": "https://api-v2.aquasoft.uz/legal/privacy/",
+        "shortDescription": "Read CRM customers and sales",
+        "supportURL": "https://api-v2.aquasoft.uz/legal/support/",
+        "termsOfServiceURL": "https://api-v2.aquasoft.uz/legal/terms/",
+        "websiteURL": "https://aquasoft.uz"
       },
       "publication": {
         "release_notes": "Customer lists now read precomputed stats: total counts, rhythm segments, inactivity, money and container debt filters and sorting."
@@ -88,6 +92,7 @@
     "customers",
     "aquasoft"
   ],
+  "license": "MIT",
   "name": "aquasoft",
-  "version": "0.2.1"
+  "version": "0.2.2"
 }

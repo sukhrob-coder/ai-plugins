@@ -12,6 +12,10 @@ OAuth login oynasida AquaSoft hisobingiz bilan kiring va faqat kerakli
 tashkilotga o‘qish ruxsatini bering. Parol yoki tokenni AI suhbatiga yozmang.
 Har bir foydalanuvchi o‘z hisobini ulaydi; paketda umumiy kalit yo‘q.
 
+O‘rnatish (Claude Code): `/plugin install aquasoft --marketplace sukhrob-coder/ai-plugins`.
+Codex: `codex plugin marketplace add sukhrob-coder/ai-plugins`, so‘ng
+`codex plugin add aquasoft@aquasoft`.
+
 Claude Code’da paketni ochilgan papkadan `claude --plugin-dir /absolute/path/to/plugin`
 orqali sinang; `/mcp` menyusida AquaSoft’ni autentifikatsiya qiling.
 OpenAI paketida root `plugin.json` va `mcp.json` bor; uni plugin sinov/ulash

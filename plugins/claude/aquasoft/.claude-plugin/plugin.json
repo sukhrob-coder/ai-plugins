@@ -4,11 +4,16 @@
   },
   "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected AquaSoft organization.",
   "displayName": "AquaSoft",
+  "homepage": "https://aquasoft.uz",
   "keywords": [
     "crm",
     "customers",
     "aquasoft"
   ],
+  "license": "MIT",
   "name": "aquasoft",
-  "version": "0.2.1"
+  "privacyPolicyUrl": "https://api-v2.aquasoft.uz/legal/privacy/",
+  "supportUrl": "https://api-v2.aquasoft.uz/legal/support/",
+  "termsOfServiceUrl": "https://api-v2.aquasoft.uz/legal/terms/",
+  "version": "0.2.2"
 }
