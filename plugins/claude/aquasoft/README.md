@@ -12,7 +12,8 @@ OAuth login oynasida AquaSoft hisobingiz bilan kiring va faqat kerakli
 tashkilotga o‘qish ruxsatini bering. Parol yoki tokenni AI suhbatiga yozmang.
 Har bir foydalanuvchi o‘z hisobini ulaydi; paketda umumiy kalit yo‘q.
 
-O‘rnatish (Claude Code): `/plugin install aquasoft --marketplace sukhrob-coder/ai-plugins`.
+O‘rnatish (Claude Code): `/plugin marketplace add sukhrob-coder/ai-plugins`, so‘ng
+`/plugin install aquasoft@aquasoft`.
 Codex: `codex plugin marketplace add sukhrob-coder/ai-plugins`, so‘ng
 `codex plugin add aquasoft@aquasoft`.
 
@@ -26,8 +27,5 @@ Ro‘yxat natijalari sahifalangan. Keyingi sahifa mavjud bo‘lsa, javob butun
 tarixni ifodalamaydi. Boshqa tashkilot kerak bo‘lsa, ulanish ruxsatini qayta
 ko‘rib chiqing; so‘rovga tashkilot ID qo‘shib cheklovni chetlab o‘tib bo‘lmaydi.
 
-Bu dastlabki test paketi. Katalogda nashr qilinganini yoki production OAuth
-sinovidan o‘tganini paketning o‘zi tasdiqlamaydi. Logodagi suv belgisi vaqtinchalik
-neytral grafika; nashrdan oldin egasi tasdiqlashi kerak.
 Paket to‘qqiz vositali yangi release uchun; eski server kamroq vosita qaytarsa,
 yetishmayotgan hisobotni avtomatik taxmin qilish o‘rniga serverni yangilash kerak.
