@@ -1,0 +1,12 @@
+{
+  "name": "aquasoft",
+  "interface": {"displayName": "Aquasoft"},
+  "plugins": [
+    {
+      "name": "aquasoft",
+      "source": {"source": "local", "path": "./plugins/openai/aquasoft"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}

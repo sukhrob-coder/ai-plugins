@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "aquasoft": {
+      "type": "http",
+      "url": "https://api-v2.aquasoft.uz/mcp",
+      "oauth": {"scopes": "mcp:crm:read"}
+    }
+  }
+}

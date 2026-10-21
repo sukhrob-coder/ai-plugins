@@ -1,0 +1,16 @@
+{
+  "name": "aquasoft",
+  "owner": {"name": "Aquasoft"},
+  "metadata": {
+    "description": "Aquasoft plugins for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "aquasoft",
+      "source": "./plugins/claude/aquasoft",
+      "description": "Read customer details, locations, orders, payments, gross sales and current debtors in your connected Aquasoft organization.",
+      "category": "productivity",
+      "keywords": ["crm", "customers", "aquasoft"]
+    }
+  ]
+}
