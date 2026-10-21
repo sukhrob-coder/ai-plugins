@@ -3,7 +3,7 @@
   "author": {
     "name": "Aquasoft"
   },
-  "description": "Read customer details, locations, orders, payments, gross sales and current debtors in your connected Aquasoft organization.",
+  "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected Aquasoft organization.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -21,11 +21,11 @@
         "developerName": "Aquasoft",
         "displayName": "Aquasoft",
         "logo": "./assets/logo.svg",
-        "longDescription": "Find and list customers in your connected Aquasoft organization, read saved locations, orders, payments and manual debt charges, and inspect gross delivered sales and current debtors. Existing account permissions still apply. Sales exclude rental lines and are not adjusted for returns or credit notes. This version cannot change records, send SMS or produce driver statistics.",
+        "longDescription": "Find customers, count them by segment, inactivity and debt in your connected Aquasoft organization, read saved locations, orders, payments and manual debt charges, and inspect gross delivered sales and current debtors. Existing account permissions still apply. Sales exclude rental lines and are not adjusted for returns or credit notes. This version cannot change records, send SMS or produce driver statistics.",
         "shortDescription": "Read CRM customers and sales"
       },
       "publication": {
-        "release_notes": "Initial read-only CRM plugin with organization-bound OAuth, customer histories and bounded order, gross-sales and debtor reads."
+        "release_notes": "Customer lists now read precomputed stats: total counts, rhythm segments, inactivity, money and container debt filters and sorting."
       },
       "review": {
         "commerce": false,
@@ -49,9 +49,9 @@
           ],
           "positive": [
             {
-              "description": "List and find the sample customer",
-              "expected_behavior": "Return a bounded customer page and the matching sample customer's ID; clarify ambiguous names.",
-              "prompt": "List my customers, then find Plugin Demo Customer by name.",
+              "description": "Count at-risk customers and find the sample customer",
+              "expected_behavior": "Use one list_customers call with segment=at_risk, report total_count with the segment rule and stats freshness, then return the matching sample customer's ID; clarify ambiguous names.",
+              "prompt": "How many customers are at risk of churning? Then find Plugin Demo Customer by name.",
               "tools_triggered": "list_customers, search_customers"
             },
             {
@@ -89,5 +89,5 @@
     "aquasoft"
   ],
   "name": "aquasoft",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }

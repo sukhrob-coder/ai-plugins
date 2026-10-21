@@ -8,7 +8,7 @@
     {
       "name": "aquasoft",
       "source": "./plugins/claude/aquasoft",
-      "description": "Read customer details, locations, orders, payments, gross sales and current debtors in your connected Aquasoft organization.",
+      "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected Aquasoft organization.",
       "category": "productivity",
       "keywords": ["crm", "customers", "aquasoft"]
     }

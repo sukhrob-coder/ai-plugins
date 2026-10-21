@@ -1,6 +1,7 @@
 # Aquasoft customer reads
 
-Bu plugin ulangan tashkilotingizdagi mijozlarni qidirish, detail, manzillar,
+Bu plugin ulangan tashkilotingizdagi mijozlarni qidirish, segment va jami soni
+(xavf ostida, yo‘qotilgan, qarzdor), detail, manzillar,
 buyurtmalar tarixi, to‘lov/qo‘lda yozilgan qarzlar, tashkilot buyurtmalari,
 yalpi sotuv va joriy qarzdorlarni o‘qish uchun. Yozish amallari va haydovchilar
 statistikasi mavjud emas. Yalpi sotuvdan qaytarish va kredit-notalar ayrilmagan;
