@@ -4,9 +4,7 @@
   },
   "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected AquaSoft organization.",
   "displayName": "AquaSoft",
-  "documentationUrl": "https://github.com/sukhrob-coder/ai-plugins/tree/main/plugins/claude/aquasoft#readme",
   "homepage": "https://aquasoft.uz",
-  "icon": "./assets/logo.svg",
   "keywords": [
     "crm",
     "customers",
@@ -14,9 +12,6 @@
   ],
   "license": "MIT",
   "name": "aquasoft",
-  "privacyPolicyUrl": "https://api-v2.aquasoft.uz/legal/privacy/",
   "repository": "https://github.com/sukhrob-coder/ai-plugins",
-  "supportUrl": "https://api-v2.aquasoft.uz/legal/support/",
-  "termsOfServiceUrl": "https://api-v2.aquasoft.uz/legal/terms/",
-  "version": "0.2.3"
+  "version": "0.2.4"
 }
