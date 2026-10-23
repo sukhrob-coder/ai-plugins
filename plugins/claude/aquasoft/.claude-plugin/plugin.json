@@ -2,7 +2,7 @@
   "author": {
     "name": "AquaSoft"
   },
-  "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected AquaSoft organization.",
+  "description": "Read CRM data, create authorized tasks and manage reviewed customer Telegram messages in your connected AquaSoft organization.",
   "displayName": "AquaSoft",
   "homepage": "https://aquasoft.uz",
   "keywords": [
@@ -16,5 +16,5 @@
   "repository": "https://github.com/sukhrob-coder/ai-plugins",
   "supportUrl": "https://api-v2.aquasoft.uz/legal/support/",
   "termsOfServiceUrl": "https://api-v2.aquasoft.uz/legal/terms/",
-  "version": "0.2.6"
+  "version": "0.3.0"
 }

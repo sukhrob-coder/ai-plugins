@@ -1,11 +1,11 @@
 ---
 name: customer-read
-description: Read AquaSoft customers, customer segments and counts, saved locations, orders, payments, gross delivered sales and current debtors in the connected organization. Use for CRM questions; writes, net-sales reporting and driver statistics are unavailable.
+description: Read AquaSoft customers, customer segments and counts, saved locations, orders, payments, gross delivered sales and current debtors in the connected organization. Use for customer and sales questions; task creation and customer bot messaging have separate packaged skills.
 ---
 
 # AquaSoft customer reads
 
-Use the connected AquaSoft MCP server. Discover the available tools rather than assuming a client-specific tool prefix. This package targets nine tools: `search_customers`, `list_customers`, `get_customer`, `get_customer_locations`, `get_customer_order_history`, `get_customer_payments`, `list_orders`, `get_sales_summary` and `list_debtors`. If an older deployed server lacks a tool, explain the limitation instead of simulating it through customer enumeration.
+Use the connected AquaSoft MCP server. Discover the available tools rather than assuming a client-specific tool prefix. This skill covers nine customer read tools: `search_customers`, `list_customers`, `get_customer`, `get_customer_locations`, `get_customer_order_history`, `get_customer_payments`, `list_orders`, `get_sales_summary` and `list_debtors`. If an older deployed server lacks a tool, explain the limitation instead of simulating it through customer enumeration.
 
 ## Select the right customer
 
@@ -40,8 +40,8 @@ Use `list_customers` for counts, segments and top-N questions; one call returns 
 
 `list_orders` requires inclusive `start_date` and `end_date` delivery-date bounds, at most 366 days. It also accepts status and customer filters. It preserves the account's CRM list visibility: a driver does not gain access to other drivers' orders. Explain the date basis when the question could mean orders created rather than delivered.
 
-`get_sales_summary` requires the same bounded dates and financial permissions. Its `gross_sales_amount` is invoiced delivered SALE goods, including sold containers and legacy delivery fallback. It is not cash received, profit or net sales: returns and credit notes are not deducted, and rented goods are excluded. Do not rename it as net revenue. Above 10000 delivered orders, ask for a narrower period; do not silently return a partial total. Do not sum unlike product units as a physical water volume.
+`get_sales_summary` requires the same bounded dates and financial permissions. Its `gross_sales_amount` is invoiced delivered SALE goods, including sold containers and legacy delivery fallback. It is not cash received, profit or net sales: returns and credit notes are not deducted, and rented goods are excluded. Do not rename it as net revenue. Do not sum unlike product units as a physical water volume.
 
-`list_debtors` returns current invoice debt after active payments, credits, reversals and unallocated advance offsets, sorted by debt. It accepts a query and pagination. It has no historical as-of date filter. A debtor page is not a company-wide total unless the response explicitly supplies one.
+`list_debtors` returns current invoice debt after active payments, credits, reversals and unallocated advance offsets, sorted by debt. It accepts a query and pagination. It has no historical as-of date filter. It reads precomputed customer stats that refresh about a minute after changes; `stats_pending_refresh_count` reports queued refreshes. A debtor page is not a company-wide total unless the response explicitly supplies one.
 
-This plugin cannot create or edit customers, orders, payments or SMS, and has no driver statistics tool. Explain those limits rather than claiming a write, external send, net-sales result or unsupported statistic succeeded.
+This plugin cannot create or edit customers, orders or payments, send SMS, or compute driver performance/salary statistics. Task creation is documented in the sibling `crm-operations` skill; owner-authorized Telegram text/photo/document messaging is documented in the sibling `customer-bot` skill. Those supported actions do not permit financial edits, arbitrary broadcasts or invented statistics. Explain unsupported requests without claiming they succeeded.

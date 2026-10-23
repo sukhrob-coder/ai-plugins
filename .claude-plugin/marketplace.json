@@ -9,7 +9,7 @@
       "name": "aquasoft",
       "displayName": "AquaSoft",
       "source": "./plugins/claude/aquasoft",
-      "description": "Read customer details, segments and counts, locations, orders, payments, gross sales and current debtors in your connected AquaSoft organization.",
+      "description": "Read CRM data, create authorized tasks and manage reviewed customer Telegram messages in your connected AquaSoft organization.",
       "category": "productivity",
       "keywords": ["crm", "customers", "aquasoft"]
     }

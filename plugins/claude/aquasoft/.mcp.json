@@ -3,7 +3,7 @@
     "aquasoft": {
       "type": "http",
       "url": "https://api-v2.aquasoft.uz/mcp",
-      "oauth": {"scopes": "mcp:crm:read"}
+      "oauth": {"scopes": "mcp:crm:read mcp:tasks:write mcp:customer-bot:write"}
     }
   }
 }
