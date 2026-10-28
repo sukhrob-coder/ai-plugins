@@ -31,7 +31,7 @@
         "websiteURL": "https://aquasoft.uz"
       },
       "publication": {
-        "release_notes": "Adds guidance for all 28 current MCP tools: CRM operations, explicitly authorized task creation, and owner-only customer bot invitations plus reviewed text/photo/document drafts, confirmation and delivery status. Claude requests separate task and bot write scopes; existing links need additional OAuth consent."
+        "release_notes": "Covers all 31 current MCP tools. Customer bot guidance adds invitation drafts, campaign history and statistics, due-soon recipient filters, three-button reorder prompts with a 12 or 24 hour reminder and owner follow-up, and reply/order results. Sending still requires owner review and confirmation."
       },
       "review": {
         "commerce": false,
@@ -96,5 +96,5 @@
   ],
   "license": "MIT",
   "name": "aquasoft",
-  "version": "0.3.0"
+  "version": "0.3.1"
 }

@@ -1,7 +1,7 @@
 # AquaSoft plugin marketplace
 
 Bu repo AquaSoft CRM plugini uchun Claude Code va Codex (ChatGPT) marketplace’i.
-`0.3.0` versiyasi ulangan tashkilotdagi mijozlar, buyurtmalar, to‘lovlar, moliya,
+`0.3.1` versiyasi ulangan tashkilotdagi mijozlar, buyurtmalar, to‘lovlar, moliya,
 haydovchi profillari, topshiriqlar va omborni o‘qiydi; alohida OAuth ruxsati bilan
 topshiriq yaratadi va owner tasdiqlagan Telegram bot xabarlarini yuboradi.
 Fayllar backend reposidagi
@@ -51,7 +51,7 @@ Media uchun ommaviy HTTPS havola yoki shu botga tegishli Telegram `file_id` kera
 SMS va lokal fayl yuklash qo‘llanmaydi. `sent` Telegram qabul qilganini bildiradi,
 mijoz o‘qiganini emas. `unknown` natijani avtomatik qayta yuborish mumkin emas.
 
-Paketdagi 3 ta skill 28 ta MCP amalini qamraydi: `customer-read`,
+Paketdagi 3 ta skill 31 ta MCP amalini qamraydi: `customer-read`,
 `crm-operations`, `customer-bot`. Paket yangilanishi backend deploy yoki haqiqiy
 klientda yuborish muvaffaqiyatini anglatmaydi.
 

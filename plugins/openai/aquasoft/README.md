@@ -3,7 +3,7 @@
 Bu plugin ulangan tashkilotingizdagi mijozlarni qidirish, segment va jami soni
 (xavf ostida, yo‘qotilgan, qarzdor), detail, manzillar,
 buyurtmalar tarixi, to‘lov/qo‘lda yozilgan qarzlar, tashkilot buyurtmalari,
-yalpi sotuv va joriy qarzdorlarni o‘qish uchun. `0.3.0` versiyasi moliya,
+yalpi sotuv va joriy qarzdorlarni o‘qish uchun. `0.3.1` versiyasi moliya,
 haydovchilarning joriy profillari, topshiriqlar va omborni o‘qish, ruxsatli
 topshiriq yaratish va owner sifatida customer botni boshqarishni ham qamraydi.
 Yalpi sotuvdan qaytarish va kredit-notalar ayrilmagan; uni sof tushum yoki foyda
@@ -53,7 +53,7 @@ Ro‘yxat natijalari sahifalangan. Keyingi sahifa mavjud bo‘lsa, javob butun
 tarixni ifodalamaydi. Boshqa tashkilot kerak bo‘lsa, ulanish ruxsatini qayta
 ko‘rib chiqing; so‘rovga tashkilot ID qo‘shib cheklovni chetlab o‘tib bo‘lmaydi.
 
-Paket 28 ta amaliyotga mo‘ljallangan: `skills/customer-read` (9),
-`skills/crm-operations` (13), `skills/customer-bot` (6). Eski server kamroq tool
+Paket 31 ta amaliyotga mo‘ljallangan: `skills/customer-read` (9),
+`skills/crm-operations` (13), `skills/customer-bot` (9). Eski server kamroq tool
 qaytarsa, mavjud bo‘lmagan amalni simulyatsiya qilmang. Pluginni yangilash backendni
 deploy qilmaydi va mavjud ulanishga yozish huquqini yashirincha bermaydi.
