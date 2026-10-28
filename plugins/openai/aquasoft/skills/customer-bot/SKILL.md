@@ -7,7 +7,7 @@ description: Help an AquaSoft organization owner inspect the customer Telegram b
 
 These tools exist on the connected AquaSoft MCP server; no separate bot server
 URL is needed. Discover available tools rather than assuming their prefixes.
-All six tools require the existing organization `admin` (Administrator / Director)
+All customer bot tools require the existing organization `admin` (Administrator / Director)
 role and `customer_app` access. Organization and bot credentials are server-owned.
 An operator's settings permission does not grant owner messaging access.
 
@@ -31,7 +31,45 @@ condition failed, and no denial proves that a message was sent.
   and Uzbek text. `sent=false` means the user must share it manually. Do not
   describe it as a sent SMS or Telegram message.
 - `list_customer_bot_recipients`: paginated customer IDs, names, phone numbers,
-  linkage and eligibility; optional name/phone `query` and `linked` filter.
+  status, linkage and eligibility; optional name/phone `query`, `linked`, `status`
+  and `can_message` filters. Eligibility is not proof of Telegram delivery.
+- `prepare_customer_bot_invitation`: saves an invitation draft for explicit
+  customer IDs. Only linked customers can receive it through Telegram; unlinked
+  customers are skipped. The same review and approval flow below applies.
+- `list_customer_bot_messages`: paginated campaign history with content,
+  timestamps and aggregate delivery/response/reminder/order counts. Optional
+  `status` and `order_prompt` filters select campaigns.
+- `get_customer_bot_statistics`: all-time organization customer linkage,
+  campaigns, delivery statuses, responses, reminders and linked-order counts.
+  Pending includes unsent draft rows; responses do not mean read receipts.
+  Linked-order counts are not revenue.
+
+For campaign inspection, `get_customer_bot_message` supports `delivery_status`
+and `responded` filters. They affect only paginated delivery rows; summary counts
+still cover the whole campaign. Pagination cursors are tied to the filters.
+
+For customers approaching their next order, `list_customer_bot_recipients` accepts
+`due_within_days` (0-30). It includes overdue, active linked customers, excludes
+open orders, and returns an estimated next order time from precomputed delivery
+rhythm (organization inactivity threshold fallback). Missing delivery stats are
+excluded. Explain the prediction's computation time and uncertainty.
+
+`prepare_customer_bot_message(order_prompt=true)` prepares three buttons based on
+each customer's latest delivered bottle order: previous quantity, an alternative
+and `Boshqa` for manual entry (1-100). The default alternative is previous plus
+one (99 for a previous quantity of 100); the first distinct `button_quantities`
+value overrides it. Preview per-recipient quantities with the owner. Include the
+`reminder_after_hours` policy in approval: 12 or 24 (default 24). After no answer,
+one reminder is attempted; after another equal interval without an answer, the
+creator receives a CRM notification and, if Telegram-linked, an alert attempt.
+Preparing does not send these messages. Confirmation authorizes this saved
+follow-up policy as part of the campaign.
+
+Results expose latest reply text/type, selected quantity, created order,
+reminder and owner notification outcomes. Customer replies stop follow-ups;
+`/start` alone does not count as a reply. Telegram cannot report whether the
+customer read a message. Describe `read_at=null` accurately, and distinguish
+saved CRM notifications from accepted Telegram alerts or failed alert attempts.
 
 Resolve customers from user-supplied names/phone numbers and clarify ambiguous
 matches. A phone number can identify an existing CRM customer but cannot itself
